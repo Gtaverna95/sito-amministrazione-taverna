@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amministrazione Taverna</title>
+  <style>
+    :root {
+      --primary-color: #87986a;
+      --text-color: #333;
+      --background-color: #ffffff;
+      --accent-color: #f5f1ea;
+      --highlight-color: #e8e5dc;
+      --form-border: #cfd9c0;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Georgia', serif;
+      color: var(--text-color);
+      background: var(--background-color) url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+      background-repeat: repeat;
+      line-height: 1.6;
+    }
+    header {
+      background: var(--background-color);
+      text-align: center;
+      padding: 40px 10px;
+      border-bottom: 2px solid #ccc;
+    }
+    header img {
+      max-height: 500px;
+      height: auto;
+      width: auto;
+    }
+    nav {
+      background: var(--primary-color);
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #dbe4cd;
+    }
+    .hero {
+      padding: 80px 20px;
+      text-align: center;
+      background: var(--highlight-color);
+    }
+    .hero h1 {
+      font-size: 2.7em;
+      margin-bottom: 15px;
+      font-weight: 700;
+      color: var(--primary-color);
+    }
+    .hero p {
+      font-size: 1.3em;
+      color: #444;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .section {
+      padding: 60px 20px;
+      max-width: 960px;
+      margin: auto;
+      background-color: var(--background-color);
+    }
+    .section h2 {
+      font-size: 2em;
+      color: var(--primary-color);
+      border-left: 5px solid var(--primary-color);
+      padding-left: 15px;
+      margin-bottom: 25px;
+    }
+    .section p, .section li {
+      font-size: 1.1em;
+      color: #444;
+      margin-bottom: 10px;
+    }
+    .section ul {
+      list-style: square;
+      padding-left: 25px;
+    }
+    .form-section {
+      background-color: var(--accent-color);
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .form-section h2 {
+      font-size: 1.9em;
+      margin-bottom: 25px;
+      color: var(--primary-color);
+    }
+    form {
+      max-width: 520px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    input, textarea {
+      padding: 14px;
+      border: 1px solid var(--form-border);
+      border-radius: 8px;
+      font-size: 1em;
+      background-color: #fdfdfc;
+    }
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+    input[type="submit"] {
+      background-color: var(--primary-color);
+      color: white;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    input[type="submit"]:hover {
+      background-color: #6e7c55;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9em;
+    }
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2em;
+      }
+      .hero p, nav a {
+        font-size: 1em;
+      }
+      .section {
+        padding: 40px 15px;
+      }
+      header img {
+        max-height: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.jpg" alt="Logo Amministrazione Taverna">
+  </header>
+  <nav>
+    <a href="#chi-siamo">Chi Siamo</a>
+    <a href="#servizi">Servizi</a>
+    <a href="#contatti">Contatti</a>
+    <a href="#privacy">Privacy</a>
+  </nav>
+  <section class="hero">
+    <h1>Gestione Condominiale Professionale</h1>
+    <p>La nostra missione è fornire una gestione efficiente e trasparente dei tuoi immobili. Affidati all’esperienza dell’Amministrazione Taverna per sentirti finalmente tutelato e supportato, ogni giorno.</p>
+  </section>
+  <section class="section" id="chi-siamo">
+    <h2>Chi Siamo</h2>
+    <p>Siamo un'amministrazione giovane ma fortemente orientata alla trasparenza, al rispetto delle normative e alla qualità dei servizi offerti. La nostra priorità è creare rapporti umani e duraturi con i condomini, garantendo sempre un’assistenza chiara e continua.</p>
+    <p>Con sede a Voghera, operiamo nel territorio pavese offrendo supporto completo in tutte le esigenze condominiali, dalla contabilità alla manutenzione.</p>
+  </section>
+  <section class="form-section">
+    <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Icona Email" style="width: 40px; height: 40px; margin-bottom: 15px;">
+    <h2>Richiedi un preventivo in modo semplice e gratuito</h2>
+    <form action="https://formsubmit.co/gisselle.taverna@gmail.com" method="POST">
+      <input type="hidden" name="_next" value="https://amministrazionetaverna.it/grazie.html">
+      <input type="hidden" name="_autoresponse" value="Grazie di esserti rivolto ad Amministrazione Taverna, verrai presto ricontattato.">
+      <input type="text" name="name" placeholder="Il tuo nome" required>
+      <input type="email" name="email" placeholder="La tua email" required>
+      <textarea name="message" placeholder="Scrivi la tua richiesta" required></textarea>
+      <input type="submit" value="Richiedi Preventivo">
+    </form>
+    <div style="margin-top: 50px; background-color: #f0f4eb; border-left: 6px solid var(--primary-color); padding: 30px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+      <h2 style="font-size: 1.4em; color: var(--primary-color); margin-bottom: 15px;">
+        <img src="https://cdn-icons-png.flaticon.com/512/455/455705.png" alt="Icona Telefono" style="width: 24px; height: 24px; vertical-align: middle; margin-right: 8px;">
+        Preferisci lasciare il tuo recapito ed essere ricontattato?
+      </h2>
+      <p style="margin-bottom: 20px; color: #555;">Lascia qui il tuo recapito, nome e cognome, indirizzo e nome del condominio per essere ricontattato dall'amministrazione.</p>
+      <form action="https://formsubmit.co/gisselle.taverna@gmail.com" method="POST">
+        <input type="text" name="fullname" placeholder="Nome e Cognome" required>
+        <input type="text" name="phone" placeholder="Numero di telefono" required>
+        <input type="text" name="address" placeholder="Indirizzo" required>
+        <input type="text" name="condominio" placeholder="Nome del condominio" required>
+        <input type="submit" value="Richiedi Richiamata">
+      </form>
+    </div>
+  </section>
+
+  <section class="section" id="contatti">
+    <h2>Contatti</h2>
+    <p><strong>Email:</strong> gisselle.taverna@gmail.com</p>
+    <p><strong>Telefono:</strong> +39 393 6192764</p>
+    <p><strong>Sede:</strong> Strada Mezzana 58, Voghera (PV) 27058</p>
+    <p><strong>Orari:</strong> Lun–Ven 9:00 - 12:00 e 13:00 - 18:00</p>
+  </section>
+<section class="section" id="privacy">
+    <h2>Privacy e Trattamento Dati</h2>
+    <p>Ai sensi del Regolamento UE 2016/679 (GDPR), informiamo gli utenti che i dati forniti tramite i moduli presenti sul sito verranno utilizzati esclusivamente per rispondere alle richieste ricevute e per finalità strettamente connesse all'attività dell'Amministrazione Taverna.</p>
+    <p>I dati non saranno comunicati a terzi e saranno trattati nel rispetto dei principi di liceità, correttezza e trasparenza. Il conferimento dei dati è facoltativo, ma necessario per ricevere una risposta.</p>
+    <p>In qualsiasi momento è possibile richiedere l'accesso, la rettifica o la cancellazione dei propri dati scrivendo a: <a href="mailto:gisselle.taverna@gmail.com">gisselle.taverna@gmail.com</a>.</p>
+  </section>
+</body>
+</html>
